@@ -1,0 +1,91 @@
+.sponsors {
+  padding: 125px 0px;
+  background-image: url("../../img/sponsors-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.sponsors .sponsor-section {
+  margin: 0px 20px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.sponsors-image {
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sponsors-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  margin-right: 50px;
+  height: 126px;
+}
+
+.sponsors-item:first-child {
+  margin-left: 50px;
+}
+
+.sponsors-item img {
+  width: 14em;
+}
+
+.sponsor-button {
+  top: 60px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffac35;
+  transition: 0.4s;
+}
+
+.sponsor-button:hover {
+  background-color: #000;
+}
+
+.sponsor-button:hover img {
+  filter: invert(1);
+}
+
+.sponsor-button:first-child {
+  left: 0;
+}
+
+.sponsor-button:last-child {
+  right: 0;
+}
+
+.sponsor-button img {
+  width: 26px;
+}
+
+@media (max-width: 1036px) {
+  .sponsors {
+    padding: 86px 0;
+  }
+}
+
+@media (max-width: 779px) {
+  .sponsors {
+    padding: 70px 0;
+  }
+
+  .sponsors-h1 {
+    font-size: 30px;
+  }
+
+  .sponsors-item img {
+    width: 11em;
+  }
+}

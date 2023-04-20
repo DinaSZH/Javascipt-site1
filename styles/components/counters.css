@@ -1,0 +1,166 @@
+.counters {
+  background-image: url("../../img/counters-bg.jpg");
+  padding: 125px 0px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 504px;
+}
+
+.counters-text h1 {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #0e0e0e;
+  font-size: 58px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.counters-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.counters-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffac35;
+  font-size: 12px;
+  height: 135px;
+  width: 135px;
+  border-radius: 80px;
+}
+
+.counters-item h2 {
+  color: #0e0e0e;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.counters-item p {
+  color: #0e0e0e;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.delimeter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  font-size: 24px;
+  color: #0e0e0e;
+  text-align: center;
+}
+
+@media (max-width: 1036px) {
+  .counters {
+    height: 393px;
+    padding: 96px 0px;
+  }
+  .counters-item {
+    height: 110px;
+    width: 110px;
+  }
+  .counters-item h2 {
+    font-size: 45px;
+  }
+
+  .counters-item p {
+    font-size: 18px;
+  }
+  .counters-text h1 {
+    font-size: 45px;
+  }
+
+  .delimeter {
+    min-width: 45px;
+  }
+}
+
+@media (max-width: 779px) {
+  .counters {
+    height: 353px;
+    padding: 87px 0px;
+  }
+  .counters-item {
+    height: 100px;
+    width: 100px;
+  }
+  .counters-item h2 {
+    font-size: 40px;
+  }
+
+  .counters-item p {
+    font-size: 16px;
+  }
+
+  .counters-text h1 {
+    font-size: 35px;
+  }
+
+  .delimeter {
+    min-width: 30px;
+  }
+}
+
+@media (max-width: 590px) {
+  .counters {
+    height: 340px;
+  }
+  .counters-item {
+    height: 80px;
+    width: 80px;
+  }
+  .counters-item h2 {
+    font-size: 35px;
+  }
+
+  .counters-item p {
+    font-size: 14px;
+  }
+
+  .counters-text h1 {
+    font-size: 30px;
+  }
+
+  .delimeter {
+    min-width: 20px;
+  }
+}
+
+@media (max-width: 475px) {
+  .counters {
+    height: 325px;
+    padding: 94px 0px;
+  }
+  .counters-item {
+    height: 60px;
+    width: 60px;
+  }
+  .counters-item h2 {
+    font-size: 27px;
+  }
+
+  .counters-item p {
+    font-size: 11px;
+  }
+
+  .counters-text h1 {
+    font-size: 25px;
+  }
+
+  .delimeter {
+    min-width: 15px;
+  }
+}

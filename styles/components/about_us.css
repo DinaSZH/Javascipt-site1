@@ -1,0 +1,97 @@
+.about_us {
+  padding: 125px 0;
+}
+
+.about_Maintext {
+  padding: 0 15px;
+}
+.about_Maintext h1 {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #0e0e0e;
+  font-size: 58px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  padding-bottom: 40px;
+}
+
+.about_text {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 15px;
+}
+
+.about_text1 {
+  padding-right: 40px;
+}
+
+.about_text1 > p:first-child {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #0e0e0e;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding-bottom: 40px;
+}
+
+.about_text1 > p:nth-child(2) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #a09d9d;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+}
+
+.about_text2 {
+  padding-left: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+.skill-bar {
+  padding-bottom: 20px;
+}
+
+.skill-text {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.skill-percentage {
+  background: #0e0e0e;
+  height: 16px;
+  border-radius: 8px;
+  border-width: 0;
+}
+
+.skill-percentage .span {
+  background-color: #ffa500;
+  border-radius: 1000px;
+  height: 16px;
+}
+
+@media (max-width: 779px) {
+  .about_us {
+    padding: 38px 0;
+  }
+  .about_text {
+    display: block;
+  }
+
+  .about_text2 {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+
+  .about_Maintext h1 {
+    font-size: 45px;
+    padding-bottom: 20px;
+  }
+}

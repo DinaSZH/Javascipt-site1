@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../../fonts/static/Montserrat-Medium.ttf");
+}
+
+.services {
+  display: flex;
+  background: #ffac35;
+}
+
+.services-item-left {
+  flex: 1;
+  margin-right: 60px;
+  /* background-image: url(/mt-demo/67900/67967/mt-content/uploads/2018/06/mt-1509-home-bg1.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.services-item-left img {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  transition: 0.2s linear;
+  object-fit: cover;
+}
+
+.item-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0px;
+}
+
+.item-right .item2-text > h1 {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #0e0e0e;
+  font-size: 58px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+.services-item2-list {
+  padding-top: 40px;
+  width: 80%;
+}
+
+.faq {
+  max-width: 600px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  /* border-bottom: 2px solid #fff; */
+  cursor: pointer;
+}
+
+.question {
+  margin-right: 20px;
+  background-color: #fff;
+  color: #0e0e0e;
+  font-size: 24px;
+  padding: 12px 14px 12px 19px;
+  border-radius: 35px;
+  /* width: 80%; */
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Montserrat-Medium";
+
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.question img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s ease-in;
+}
+
+.answer {
+  margin-right: 15px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1.4s ease;
+}
+.answer p {
+  padding-left: 20px;
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq.active img {
+  transform: rotate(90deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1036px) {
+  .item-right .item2-text > h1 {
+    font-size: 45px;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 779px) {
+  .services {
+    display: block;
+  }
+
+  .services-item-left {
+    margin-right: 0px;
+  }
+
+  .item-right {
+    margin-left: 40px;
+  }
+
+  .answer p {
+    font-size: 1.1rem;
+    padding-left: 0px;
+  }
+
+  .question {
+    width: 90%;
+  }
+
+  .services-item2-list {
+    width: 90%;
+  }
+}

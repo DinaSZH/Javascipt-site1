@@ -1,0 +1,147 @@
+.timeline {
+  padding: 125px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-text {
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #0e0e0e;
+  font-size: 58px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.timeline-block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  /* width: 100%; */
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+.categories {
+  display: flex;
+  width: 100%;
+}
+
+.categories > div {
+  width: 100%;
+  text-align: center;
+  border-style: solid;
+  border-left-width: 3px;
+  border-top-width: 3px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-radius: 40px;
+  border-color: #ffac35;
+  background-color: transparent;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding-top: 16px;
+  padding-right: 70px;
+  padding-bottom: 16px;
+  padding-left: 70px;
+  font-size: 22px;
+  transition: 0.4s;
+  cursor: pointer;
+  color: #0e0e0e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.categories > div:hover {
+  background-color: #ffac35;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.blog-item {
+  display: flex;
+  /* width: calc(25% - 23px); */
+}
+
+.blog-item img {
+  width: 50%;
+}
+
+.blog-item div {
+  padding: 0px 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #a09d9d;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+@media (max-width: 1036px) {
+  .timeline {
+    padding: 86px 0px;
+  }
+  .timeline-text {
+    font-size: 45px;
+  }
+
+  .categories > div {
+    font-size: 20px;
+  }
+
+  .blog-item div {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 891px) {
+  .timeline {
+    padding: 70px 0px;
+  }
+
+  .timeline-block {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .categories {
+    display: block;
+    padding: 0 20px;
+  }
+  .categories > div {
+    width: 100%;
+    /* margin-bottom: 20px; */
+    margin: 0px 0px 20px 0px;
+  }
+
+  .blog-item {
+    display: block;
+  }
+
+  .blog-item img {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .timeline-text {
+    font-size: 30px;
+  }
+
+  .categories > div {
+    font-size: 18px;
+  }
+
+  .blog-item div {
+    font-size: 12px;
+  }
+}
